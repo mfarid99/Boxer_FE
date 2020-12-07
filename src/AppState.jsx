@@ -5,7 +5,9 @@ import React, { useContext, useReducer } from "react"
 ///////////////// 
 
 const initialState = {
-    url: "http://mfboxerrailsbackend.herokuapp.com"
+    url: "http://mfboxerrailsbackend.herokuapp.com",
+    token: null,
+    username: null
 }
 
 /////////////////
@@ -15,12 +17,23 @@ const initialState = {
 //action = {type: "", payload: ---}
 
 const reducer = (state, action) => {
+    let newState;
+    switch (action.type) {
+        case "auth":
+            newState = { ...state, ...action.payload };
+            return newState;
+            break;
+            case "logout":
+                newState = {...state, token: null, username: null}
+                window.localStorage.removeItem("auth")
+                return newState
 
-    switch(action.type) {
-        default:
-            return state 
+            default:
+                return state;
+            
+            break
     }
-}
+};
 
 /////////////////////
 //AppContext
