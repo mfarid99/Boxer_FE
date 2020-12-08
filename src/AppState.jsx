@@ -7,8 +7,18 @@ import React, { useContext, useReducer } from "react"
 const initialState = {
     url: "http://mfboxerrailsbackend.herokuapp.com",
     token: null,
-    username: null
-}
+    username: null,
+    fighters: null,
+    new: {
+        name: "",
+        wins: ""
+    },
+    edit: {
+        id: 0,
+        name: "",
+        wins: ""
+    }
+};
 
 /////////////////
 //Reducer
@@ -27,6 +37,10 @@ const reducer = (state, action) => {
                 newState = {...state, token: null, username: null}
                 window.localStorage.removeItem("auth")
                 return newState
+                case "getFighters": 
+                newState = {...state, fighters: action.payload}
+                return newState
+                break
 
             default:
                 return state;
