@@ -41,7 +41,10 @@ const reducer = (state, action) => {
                 newState = {...state, fighters: action.payload}
                 return newState
                 break
-
+            case "select":
+                newState= {...state, edit: action.payload}
+                return newState
+                break;
             default:
                 return state;
             

@@ -34,7 +34,7 @@ header nav div:hover {
 .auth form {
   padding: 50px;
 }
-.auth form input {
+.auth form input, .form form input, button {
   background-color: red;
   color: white;
   padding: 8px;
@@ -44,3 +44,17 @@ header nav div:hover {
   text-align: center;
   font-size: 1.2em;
 }
+
+/* Dashboard */
+
+.dashboard {
+  text-align: center;
+}
+
+.dashboard .fighter {
+  text-align: center;
+  width: 90%;
+  margin: 10px auto;
+  border: 3px solid red;
+}
+

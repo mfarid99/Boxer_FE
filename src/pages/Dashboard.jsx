@@ -38,10 +38,20 @@ const Dashboard = (props) => {
                     <h2>{fighter.losses}</h2>
                     <h2>{fighter.titles}</h2>
                     <h2>{fighter.about}</h2>
+                    <button onClick={() => {
+                        dispatch({type: "select", payload: fighter})
+                        props.history.push("/dashboard/edit")
+                    }}>Edit Fighter</button>
 
-
-
-
+                    <button onClick={() => {
+                       fetch(url + "/fighters/" + fighter.id, {
+                           method: "delete", 
+                           headers: {
+                               Authorization: "bearer " + token
+                           }
+                       })
+                       .then(()=> getFighters())
+                        }}>Delete Fighter</button>
 
                 </div>
             ))}
