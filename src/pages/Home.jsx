@@ -1,7 +1,18 @@
 import React from "react"
 
 const Home = (props) => {
-    return <h1>Home</h1>
-}
+    return (<>
+
+<div className="homepgtxt1"> 
+        <h1 id="pick">Pick Your            Top 10</h1>
+        <h1 id="boxing">BOXING</h1>
+        <h1 id="goat">G.O.A.T</h1>
+        </div>
+
+       <div className="homepgbkg"> </div>
+
+        
+        
+      </>  )}
 
 export default Home

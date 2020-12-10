@@ -50,13 +50,14 @@ const Form = (props) => {
     return (
     <div className="form">
         <form onSubmit={handleSubmit}>
-            <input type="text" name="name" value={formData.name} onChange={handleChange}/>
-            <input type="text" name="photo" value={formData.photo} onChange={handleChange}/>
-            <input type="text" name="weightclass" value={formData.weightclass} onChange={handleChange}/>
-            <input type="text" name="wins" value={formData.wins} onChange={handleChange}/>
-            <input type="text" name="losses" value={formData.losses} onChange={handleChange}/>
-            <input type="text" name="titles" value={formData.titles} onChange={handleChange}/>
-            <input type="text" name="about" value={formData.about} onChange={handleChange}/>
+        <input type="text" name = "photo" value = {formData.photo} Placeholder = "Image URL" onChange={handleChange}/>
+            <input type="text" name="name" Placeholder = "Name" value= {formData.name} onChange={handleChange}/>
+
+            <input type="text" name="weightclass" Placeholder = "Weight Class" value={formData.weightclass} onChange={handleChange}/>
+            <input type="text" name="wins" Placeholder = "Wins" value={formData.wins} onChange={handleChange}/>
+            <input type="text" name="losses" Placeholder = "Losses" value={formData.losses} onChange={handleChange}/>
+            <input type="text" name="titles" Placeholder = "Titles Held" value={formData.titles} onChange={handleChange}/>
+            <input type="text" name="about" Placeholder = "About" value={formData.about} onChange={handleChange}/>
             <input type="submit" value={action}/>
 
         </form>

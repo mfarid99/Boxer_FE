@@ -5,8 +5,9 @@ import {useAppData, useAppState} from "../AppState.jsx"
 const Nav = (props) => {
     const {state, dispatch} = useAppState()
     return (
+    
     <header>
-        <h1>Moe App</h1>
+        <div > 
         <nav>
             {!state.token ? (<><Link to="/"> <div>Home</div></Link>
             <Link to="/auth/signup"> <div>Signup</div></Link>
@@ -17,7 +18,12 @@ const Nav = (props) => {
             }}>Logout</div> : null}
 
         </nav>
+        
+
+        </div>
+        
     </header>
+    
     )}
 
 export default Nav

@@ -55,6 +55,8 @@ const Auth = (props) => {
     }
     ;
     return <div className="auth">
+                <div className="signupbkg"/>
+
         <form onSubmit={handleSubmit}>
             <input type = "text" name="username" value={formData.username} onChange = {handleChange} />
             <input type = "password" name="password" value={formData.password} onChange = {handleChange} />

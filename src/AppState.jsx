@@ -11,12 +11,25 @@ const initialState = {
     fighters: null,
     new: {
         name: "",
-        wins: ""
+        photo: "",
+        wins: "",
+        weightclass: "",
+        wins: "",
+        losses: "",
+        titles: "",
+        about: ""
+
     },
     edit: {
         id: 0,
         name: "",
-        wins: ""
+        photo: "",
+        wins: "",
+        weightclass: "",
+        wins: "",
+        losses: "",
+        titles: "",
+        about: ""
     }
 };
 
