@@ -57,12 +57,14 @@ const Form = (props) => {
             <input type="text" name="wins" Placeholder = "Wins" value={formData.wins} onChange={handleChange}/>
             <input type="text" name="losses" Placeholder = "Losses" value={formData.losses} onChange={handleChange}/>
             <input type="text" name="titles" Placeholder = "Titles Held" value={formData.titles} onChange={handleChange}/>
+
             <input type="text" name="about" Placeholder = "About" value={formData.about} onChange={handleChange}/>
+
             <input type="submit" value={action}/>
 
         </form>
     </div>
+    
     );
 };
-
 export default Form

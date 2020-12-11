@@ -1,5 +1,6 @@
-/* Nav Comp */
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
 
 header{
   text-align: center;
@@ -17,9 +18,7 @@ header nav a {
 }
 
 header nav div {
-  font-size: larger;
-  background-color: rgba(65, 65, 65, .7);
-  color: white;
+  font-size: 2.5em;
   width: 200px;
   border-radius: 7px;
   transition: background-color .2s, color .2s;
@@ -27,34 +26,46 @@ header nav div {
   margin: 15px 0px 62px 0px;
   box-shadow: black 5px 10px;
   border: 3px solid black;
-  
+  background-color: rgba(65, 65, 65, .7);
+  color: white;
 }
 
 
 header nav div:hover {
-  background-color: orange;
-  color: purple;
+  background-color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
   
 }
 
-/* Auth component */
 
 .signupbkg
 {
-  background-image: url("https://external-preview.redd.it/JsOUdN_e3ZFelc91ljGb30jiPgGWXM5aHdXhYiG2sZA.jpg?auto=webp&s=c4a3d53c35da484636f41cca850cfc88cfe9b868");
+  background-image: url("https://i.imgur.com/yTNaThP.jpg");
   background-position: center;  
   background-repeat: no-repeat;  
-  height: 1000px;
+  height: 1300px;
   background-size: cover;
   margin: -500px -7px -500px -8px;   
 
 }
 
 .auth form {
-  padding: 50px;
+  padding: 60px;
 }
-.auth form input, .form form input, button {
-  background-color: red;
+.auth form input, .form form input {
+  background-color: rgb(255, 176, 6);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.2em;
+
+}
+
+button {
+  background-color: rgb(255, 6, 6);
   color: white;
   padding: 8px;
   border-radius: 5px;
@@ -64,26 +75,50 @@ header nav div:hover {
   font-size: 1.2em;
 }
 
-/* Dashboard */
 
 .dashboard {
   text-align: center;
-  background-color: rgba(0, 0, 0, .5);
+  background-image: url("https://wallpaperaccess.com/full/413590.jpg");
+  background-color: rgb(0, 0, 0);
   color: white;
+
 }
 
-.dashboard .fighter {
+.dashboard {
   text-align: center;
-  width: 90%;
+  width: 100%;
   margin: 10px auto;
-  border: 3px solid red;
   color: white;
 }
 
-.fighter, .btn {
+.fighter {
+  text-align: center;
+  margin: 15px -6px 10px -30px;
+  width: 100%;
+  border: 7px solid rgb(5, 3, 0);
+  color: white;
+}
+
+#dbtxt {
+  font-family: 'Fondamento', cursive;
+
+}
+
+.fighter, .btn, .aboutdiv {
  display: flex;
  flex-direction: row;
 
+}
+
+.aboutdiv {
+  margin: 76px 0px 0px 50px;
+  
+}
+
+#about {
+height: 273px;
+width: 300px;
+background-color: white;
 }
 
 .info {
@@ -98,7 +133,7 @@ header nav div:hover {
   height: 500px;
   width: 600px;
   margin: 0px 20px 0px 20px;
-  border: 10px solid rgb(255, 0, 0);
+  border: 5px solid rgb(255, 0, 0);
 
 }
 
@@ -107,6 +142,7 @@ header nav div:hover {
   border-radius: 10px;
   padding: 8px;
   color: rgb(0, 0, 0);
+  background-color: white;
 }
 
 #losses {
@@ -136,6 +172,7 @@ header nav div:hover {
   }
 
   #deletebtn {
+    padding: 0px 15px 0px 15px;
     border-radius: 20px;
     box-shadow: 5px 10px black;
 
@@ -152,20 +189,45 @@ header nav div:hover {
     font-size: 2em;
     text-align: center;
     margin: 0px 0px 0px 0px;
+    font-family: 'Fondamento', cursive;
+
 
   }
 
   #pick, #your {
     color: rgb(255, 255, 255);
     font-size: 3em;
+    text-shadow: 15px 15px rgba(14, 1, 1, 0.5)
   }
 
 
   #boxing {
     font-size: 4em;
-  }
+  color: rgb(255, 0, 0);
+  text-shadow: 15px 15px rgba(14, 1, 1, 0.5)
+}
+
 
   #goat {
     font-size: 6em;
     color: silver;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
   }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px silver, 0 0 40px silver, 0 0 50px silver, 0 0 60px silver, 0 0 70px silver;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px gold, 0 0 40px gold, 0 0 50px gold, 0 0 60px gold, 0 0 70px gold, 0 0 80px;
+    }
+  }
+
+  .fighterphoto {
+    background-image: url("https://img1.pnghut.com/12/11/3/V0nA7ReStT/question-mark-neck-person-portrait-meditation.jpg");
+  }
+
+  

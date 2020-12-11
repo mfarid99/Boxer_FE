@@ -55,6 +55,7 @@ const Auth = (props) => {
     }
     ;
     return <div className="auth">
+
                 <div className="signupbkg"/>
 
         <form onSubmit={handleSubmit}>

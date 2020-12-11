@@ -1,9 +1,5 @@
 import React, { useContext, useReducer } from "react"
 
-/////////////////
-//Initial State
-///////////////// 
-
 const initialState = {
     url: "http://mfboxerrailsbackend.herokuapp.com",
     token: null,
@@ -33,11 +29,6 @@ const initialState = {
     }
 };
 
-/////////////////
-//Reducer
-///////////////// 
-
-//action = {type: "", payload: ---}
 
 const reducer = (state, action) => {
     let newState;
@@ -65,15 +56,10 @@ const reducer = (state, action) => {
     }
 };
 
-/////////////////////
-//AppContext
-////////////////////
+
 
 const AppContext = React.createContext(null)
 
-//////////////////
-//AppState Component
-///////////////// 
 
 export const AppState = (props) => {
 
@@ -85,10 +71,6 @@ export const AppState = (props) => {
     </AppContext.Provider>
 
 }
-
-///////////////
-//useAppState hook
-////////////// 
 
 export const useAppState = () => {
     return React.useContext(AppContext)

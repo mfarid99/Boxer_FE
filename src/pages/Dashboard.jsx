@@ -24,8 +24,8 @@ const Dashboard = (props) => {
 
     const loaded = () => (
         <div className ="dashboard"> 
-        <h1>{username}'s Fighters</h1>
-        <h2>Create Your Top 10 Greatest Boxers List</h2>
+        <h1 id="dbtxt">{username}'s Fighters</h1>
+        <h2 id="dbtxt">Create Your Top 10 Greatest Boxers List</h2>
         <Link to="/dashboard/new"><button>New Fighter</button></Link>
         <Route path="/dashboard/:action" render={(rp)=> <Form {...rp} getFighters={getFighters}/>}/>
 
@@ -39,7 +39,9 @@ const Dashboard = (props) => {
                     <h2 id="wins">Wins: {fighter.wins}</h2>
                     <h2 id="losses">Losses: {fighter.losses}</h2>
                     <h2 id="titles">Titles: {fighter.titles}</h2>
-                    <h2 id="about">About: {fighter.about}</h2>
+                    </div>
+                    <div className="aboutdiv"> 
+                    <article id="about">{fighter.about}</article>
                     </div>
 
                     <div className="btn"> 
@@ -57,15 +59,16 @@ const Dashboard = (props) => {
                        })
                        .then(()=> getFighters())
                         }}>Delete Fighter</button>
+                </div>
 
                 </div>
-                </div>
+                    
             ))}
         </ul>
-
-        </div> 
+        </div>  
+        
+        
     )
-
     return fighters ? loaded() : <h1>loading...</h1>
 }
 
