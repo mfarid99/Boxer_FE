@@ -1,16 +1,11 @@
-# SIMPLE REACT TEMPLATE
+In this project, I built a Rails & React APP with Ruby on Rails for the backend and React on the front end. The backend was deployed via Heroku and the front end via Netlify. All the files were uploaded to Github. 
 
-#### Created by Alex Merced of AlexMercedCoder.com/devNursery.com
+The Ruby in rails backend serve a JSON API with all CRUD operation in my model. In this project I used two models called “user” & “fighter”. User was used for authentication to have a username & password. Fighter was used to reference the boxers. 
 
-This is a minimalistic webpack react build. Best for practicing react, doesn't have many of the testing and post-processing features other builds have. Although you can add webpack and babel plugins as you wish if you want to use this as a starting place for a more powerful build setup.
+In the migrate file for users it contained string for username and password. I created one for age but I did not really use. In the fighters migrate file it included all the fighters needed info such as name, photo, weightclass, wins, losses, titles and about (which is the fighter’s bio)
 
-Make sure to remove the git repository
+I utilized the scaffold command to create all the files needed for the backend. It made things quiet simple and efficient. 
 
-`sudo rm -r .git` from the root folder
+To ensure all the routes were working, I used Postman and it was a success. 
 
-Otherwise...
-
-`npm run dev` to run dev server
-`npm run build` to build into build folder
-
-- sass is enabled, so feel free to use sass files
+After deploying the back end on Heroku, I created the frontend using a react basic template so control the size of the file and to have the necessary information to build the Front end. 
