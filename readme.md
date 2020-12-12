@@ -1,3 +1,5 @@
+Live Link: https://lucid-kare-cea573.netlify.app/
+
 In this project, I built a Rails & React APP with Ruby on Rails for the backend and React on the front end. The backend was deployed via Heroku and the front end via Netlify. All the files were uploaded to Github. 
 
 The Ruby in rails backend serve a JSON API with all CRUD operation in my model. In this project I used two models called “user” & “fighter”. User was used for authentication to have a username & password. Fighter was used to reference the boxers. 
@@ -12,4 +14,4 @@ After deploying the back end on Heroku, I created the frontend using a react bas
 
 for the front end, I set up a global state. I created a router to send user to different routes. Having state in the components makes components more re-usable and it reduces the number of unnecessary renders of components. I set up context and reducer to have the application level state. 
 
--I also defined the reducer function which handles all the different situations. In the function you pass the original state and we pass an action. This will be required so that the dispatch function invoke the rducer to update our state. Based on the action, the reducer will cause the state to get updated. 
+I also defined the reducer function which handles all the different situations. In the function you pass the original state and we pass an action. This will be required so that the dispatch function invoke the rducer to update our state. Based on the action, the reducer will cause the state to get updated. 
